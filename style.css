@@ -1,0 +1,224 @@
+/* Start Global Rules  */
+:root
+{
+    --main-color: #12bad7;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+a
+{
+    text-decoration: none;
+}
+ul li
+{
+    list-style: none;
+}
+/* End Global Rules  */
+/* Start Heading  */
+.header
+{
+    position: relative;
+    padding: 30px 60px;
+}
+.header .container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .logo
+{
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.header .container .logo span
+{
+    color: var(--main-color);
+}
+.header .container .links
+{
+    display: flex;
+    justify-content: center;
+    margin-right: 50px;
+}
+.header .container .links li a
+{
+    margin-left: 25px;
+    font-weight: bold;
+    position: relative;
+    color: black;
+    padding: 20px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.header .container .links li a:hover
+{
+    color: var(--main-colorf);
+}
+.header .container .links li a::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--main-color);
+    border-radius: 7px;
+    transition: 0.6s;
+}
+.header .container .links li a:hover::before
+{
+    width: 100%;
+}
+/* End Heading  */
+/* Start Section  */
+.section
+{
+    position: relative;
+    padding: 122px 0;
+}
+.section .container
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.main-title
+{
+    font-size: 40px;
+    margin: 0 auto 75px;
+    padding: 20px;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.main-title:hover
+{
+    background-color: var(--main-color);
+    color: white;
+}
+.section .container img
+{
+    width: 50%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: -23px;
+}
+.text h3
+{
+    font-size: 60px;
+    margin-bottom: 12px;
+    max-width: 300px;
+}
+.text h3 span
+{
+    color: var(--main-color);
+}
+.text p
+{
+    color: #777;
+    margin-bottom: 63px;
+    max-width: 300px;
+}
+.section .button
+{
+    position: absolute;
+    bottom: 45px;
+}
+.button .btn
+{
+    text-align: center;
+    transition: 0.6s;
+    cursor: pointer;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 5px;
+}
+.button .btn-1
+{
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    margin: 0 10px 20px 0;
+}
+.button .btn-1:hover
+{
+    background-color: var(--main-color);
+    color: white;
+}
+.button .btn-2
+{
+    background-color: var(--main-color);
+    color: white;
+    border: 1px solid #ccc;
+    padding: 15px 10px;
+}
+.button .btn-2:hover
+{
+    border: 1px solid var(--main-color);
+    background-color: white;
+    color: var(--main-color);
+}
+/* End Section  */
+/* Start Services */
+.services
+{
+    position: relative;
+    padding: 200px 0;
+}
+.services .container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.services .box
+{
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    padding: 15px 30px;
+    border-radius: 5px;
+    transition: 0.6s;
+    box-shadow: 1px 1px 11px 0px rgba(46, 44, 44, 0.95)
+}
+.services .box:hover
+{
+    transform: translateY(-10px);
+}
+.box img
+{
+    width: 330px;
+    height: 260px;
+    margin-bottom: 20px;
+}
+.services .box .text h2
+{
+text-align: center;
+font-size: 26px;
+margin-bottom: 15px;
+}
+.services .box .text p
+{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #777;
+}
+/* End Services */
